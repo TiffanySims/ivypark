@@ -21,7 +21,7 @@
          <div className="hero_container">
          <div className="hero_text">
          <h1>IVY PARK </h1>
-         <a className='button' href="#">Shop</a>
+        
          </div>
          </div>
          </div>

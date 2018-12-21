@@ -1,5 +1,5 @@
-export default function() {
-    return  [
+const products = 
+     [
         {
             product_id:1,
             image:['images/hoodie.jpg','images/hoodie_lady.jpg','images/hoodie_side.jpg'],
@@ -61,9 +61,9 @@ export default function() {
             product_id:6,
             image:['images/scarf.jpg','images/lady_scarf.jpg'],
             colors:'black',
-            size:['OneSize'],
+            size:['OS'],
             price: 40.00,
-            type:'accessory',
+            type:'accessories',
             title:'Ivy Park Logo Scarf',
             description:'Flat knitted logo scarf by Ivy Park. 100% Polyester. Machine wash'
     
@@ -161,5 +161,4 @@ export default function() {
         }
     ]
   
-}
-
+export default products;

@@ -1,111 +1,55 @@
 import React, { Component } from 'react';
+import products from './reducers/shop_reducer';
 
 
 
 
 class Filter extends Component {
+
+
   render() {
+
+
     return (
         <div className="filter_container">
-        <div className="filter_title">Filter</div>
       <div className="filter">
-       <h4>Product Type</h4>
-       <div className="product_type">
-
-        <label className="label">Tops
-        <input type="checkbox" />
-        <span className="checkmark"></span>
-        </label>
-        <label className="label">Bottoms
-        <input type="checkbox" />
-        <span className="checkmark"></span>
-        </label>
-        <label className="label">Outerwear
-        <input type="checkbox" />
-        <span className="checkmark"></span>
-        </label>
-        <label className="label">Accessories
-        <input type="checkbox" />
-        <span className="checkmark"></span>
-        </label>
-        <label className="label">Footwear
-        <input type="checkbox" />
-        <span className="checkmark"></span>
-        </label>
-       </div>
+       
 
         <div className="product_cost">
-        <h4>Price</h4>
-       <select>
-           <option>0-$29</option>
-           <option>$30-$59</option>
-           <option>$60-$99</option>
-           <option>$100-$150</option>
-           <option>$150+</option>
+        <h4>Type</h4>
+       <select onChange={this.props.change}  name="type" >
+           <option value="all">All</option>
+           <option value="top">Tops</option>
+           <option value="bottom">Bottoms</option>
+           <option value="outerwear">Outerwear</option>
+           <option value="accessories">Accessories</option>
+           <option value="footwear">Footwear</option>
        </select>
        </div>
 
-        <div className="sizes">
-        <h4>Size</h4>
-        <label className="label">S
-        <input type="checkbox" />
-        <span className="checkmark"></span>
-        </label>
-        <label className="label">M
-        <input type="checkbox" />
-        <span className="checkmark"></span>
-        </label>
-        <label className="label">L
-        <input type="checkbox" />
-        <span className="checkmark"></span>
-        </label>
-        <label className="label">XL
-        <input type="checkbox" />
-        <span className="checkmark"></span>
-        </label>
-        <label className="label">One Size
-        <input type="checkbox" />
-        <span className="checkmark"></span>
-        </label>
+       <div className="product_cost">
+        <h4>Price</h4>
+       <select onChange={this.props.change}  name="price" >
+           <option value="all">All</option>
+           <option value="0">under $30</option>
+           <option value="60">under $60</option>
+           <option value="100">under $100</option>
+           <option value="200">under $200</option>
+       </select>
+       </div>
       
-        </div>
-
-        <div className="product_colors">
+       <div className="product_cost">
         <h4>Color</h4>
-        <label className="label">Black
-        <input type="checkbox" />
-        <span className="checkmark"></span>
-        </label>
-        <label className="label">White
-        <input type="checkbox" />
-        <span className="checkmark"></span>
-        </label>
-        <label className="label">Grey
-        <input type="checkbox" />
-        <span className="checkmark"></span>
-        </label>
-        <label className="label">Red
-        <input type="checkbox" />
-        <span className="checkmark"></span>
-        </label>
-        <label className="label">Blue
-        <input type="checkbox" />
-        <span className="checkmark"></span>
-        </label>
-        <label className="label">Green
-        <input type="checkbox" />
-        <span className="checkmark"></span>
-        </label>
-        <label className="label">Yellow
-        <input type="checkbox" />
-        <span className="checkmark"></span>
-        </label>
-        <label className="label">Orange
-        <input type="checkbox" />
-        <span className="checkmark"></span>
-        </label>
-        </div>
-        </div>
+       <select onChange={this.props.change}  name="color" >
+           <option value="all">All</option>
+           <option value="black">Black</option>
+           <option value="white">White</option>
+           <option value="grey">Grey</option>
+           <option value="blue">Blue</option>
+           <option value="green">Green</option>
+       </select>
+       </div>
+      </div>
       </div>
     );
   }

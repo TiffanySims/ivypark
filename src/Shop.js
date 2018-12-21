@@ -1,23 +1,75 @@
 import React, { Component } from 'react';
 import Filter from './Filter';
-import {connect} from 'react-redux';
 import {Link} from 'react-router-dom';
-import {bindActionCreators} from 'redux';
-import {selectItem} from './action'
+
 
 
 
 class Shop extends Component {
+    state = {
+        
+        filtered:this.props.products,
+        color:'all',
+        size:'all',
+        price:'all',
+        type:'all'
+      }
+    
+    change = (e) => {
+    let value = e.target.value;
+    let name = e.target.name;
+    
 
+
+    this.setState({
+      [name]:value
+    },
+    () => {
+      this.filterData();
+    })
+
+    }
+    
+    filterData = () => {
+        var newData = this.props.products;
+        if(this.state.color!=='all'){
+             newData=newData.filter(product => {
+                return this.state.color == product.colors
+                      
+              })
+            }
+              if(this.state.type!=='all'){
+                newData=newData.filter(product => {
+                   return this.state.type == product.type
+                         
+                 })
+           
+
+            }
+            if(this.state.price!=='all'){
+            
+                    newData=newData.filter(product => {
+                        return this.state.price >= product.price
+                          
+                
+                    
+                 })
+                }
+            this.setState({
+                filtered:newData
+            })
+        }
+         
+      
 
   render() {
-      let list = this.props.products.map(product => {
+      let list = this.state.filtered.map(product => {
           return(
 
 
               <div className="product" key={product.product_id}>
               <Link to = {{ pathname: '/'+product.product_id}}>
-                  <img className="product_image"src={product.image[0]} onClick={() => this.props.selectItem(product)}/>
+                  <img className="product_image"src={product.image[0]} />
                   </Link>
                   <div className="product_info">
                       <p className="product_title">{product.title}</p>
@@ -35,7 +87,7 @@ class Shop extends Component {
         <div className="container">
         
         
-        <Filter />
+        <Filter change={this.change} />
             <div className="products">
                 {list}
             </div>
@@ -45,15 +97,5 @@ class Shop extends Component {
   }
 }
 
-function mapStateToProps(state){
-    return {
-        products: state.products
-    }
-}
-    
-function mapDispatchToProps(dispatch) {
-    // Whenever selectBook is called, the result shoudl be passed
-    // to all of our reducers
-    return bindActionCreators({ selectItem: selectItem }, dispatch);
-  }
-export default connect(mapStateToProps , mapDispatchToProps)(Shop);
+
+export default Shop;
