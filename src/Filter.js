@@ -31,7 +31,7 @@ class Filter extends Component {
         <h4>Price</h4>
        <select onChange={this.props.change}  name="price" >
            <option value="all">All</option>
-           <option value="0">under $30</option>
+           <option value="30">under $30</option>
            <option value="60">under $60</option>
            <option value="100">under $100</option>
            <option value="200">under $200</option>

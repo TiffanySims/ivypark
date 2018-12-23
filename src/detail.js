@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Likes from './likes'
 
 
 
@@ -38,7 +39,7 @@ class Details extends Component {
        </div>
       <p className="detail_price">${product.price}</p>
        
-       <a className="submit">Add To Wishlist</a>
+       <a className="submit" onClick={this.props.addLike}>Add To Wishlist</a>
        </div>
        </div>
         )
