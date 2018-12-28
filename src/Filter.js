@@ -16,7 +16,7 @@ class Filter extends Component {
        
 
         <div className="product_cost">
-        <h4>Type</h4>
+        <h4>Type:</h4>
        <select onChange={this.props.change}  name="type" >
            <option value="all">All</option>
            <option value="top">Tops</option>
@@ -28,18 +28,18 @@ class Filter extends Component {
        </div>
 
        <div className="product_cost">
-        <h4>Price</h4>
+        <h4>Price:</h4>
        <select onChange={this.props.change}  name="price" >
            <option value="all">All</option>
-           <option value="30">under $30</option>
-           <option value="60">under $60</option>
-           <option value="100">under $100</option>
-           <option value="200">under $200</option>
+           <option value="30">$30 &amp; under</option>
+           <option value="60">$60 &amp; under</option>
+           <option value="100">$100 &amp; under</option>
+           <option value="200">$200 &amp; under</option>
        </select>
        </div>
       
        <div className="product_cost">
-        <h4>Color</h4>
+        <h4>Color:</h4>
        <select onChange={this.props.change}  name="color" >
            <option value="all">All</option>
            <option value="black">Black</option>
@@ -48,6 +48,15 @@ class Filter extends Component {
            <option value="blue">Blue</option>
            <option value="green">Green</option>
        </select>
+       </div>
+       <div className = "product_cost">
+       <h4>Sort</h4>
+       <select onChange ={this.props.change} name = 'sortBy'>
+       <option value='asc'>Low to High</option>
+       <option value ='dec'>High to Low</option>
+       
+       </select>
+       
        </div>
       </div>
       </div>

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Filter from './Filter';
 import {Link} from 'react-router-dom';
-
+import NavBar from './Nav'
 
 
 
@@ -12,8 +12,20 @@ class Shop extends Component {
         color:'all',
         size:'all',
         price:'all',
-        type:'all'
+        type:'all',
+        sortBy:'asc'
       }
+
+      componentWillMount(){
+          let products = this.props.products.sort((a,b ) => {
+              return a.price - b.price
+          })
+          this.setState({
+              products
+          })
+      }
+
+      
     
     change = (e) => {
     let value = e.target.value;
@@ -55,6 +67,16 @@ class Shop extends Component {
                     
                  })
                 }
+                if(this.state.sortBy ==='dec'){
+                    newData = newData.sort((a,b) => {
+                        return b.price - a.price;
+                    })
+                }
+                if(this.state.sortBy ==='asc'){
+                    newData = newData.sort((a,b) => {
+                        return a.price - b.price;
+                    })
+                }
             this.setState({
                 filtered:newData
             })
@@ -63,6 +85,7 @@ class Shop extends Component {
       
 
   render() {
+    
       let list = this.state.filtered.map(product => {
           return(
 
@@ -73,18 +96,22 @@ class Shop extends Component {
                   </Link>
                   <div className="product_info">
                       <p className="product_title">{product.title}</p>
-                      <p className="product_price">${product.price}.00</p>
+                      <p className="product_price">${product.price}</p>
                   </div>
               </div>
 
           )
       })
     return (
-        <div>
+
+        <div className="container">
+            <NavBar />
+        
+            <div className="shopping">
         <h1 className="products_h1">IVY PARK</h1>
         
         <hr/>
-        <div className="container">
+        
         
         
         <Filter change={this.change} />
@@ -92,6 +119,7 @@ class Shop extends Component {
                 {list}
             </div>
         </div>
+
         </div>
     );
   }
