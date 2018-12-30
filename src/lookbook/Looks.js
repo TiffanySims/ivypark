@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Filter from './Filter';
+import Filter from '../lookbook/Filter';
 import {Link} from 'react-router-dom';
-import NavBar from './Nav'
+import NavBar from '../Nav'
 
 
 
@@ -85,7 +85,8 @@ class Shop extends Component {
       
 
   render() {
-    
+      let results = this.state.filtered.length;
+
       let list = this.state.filtered.map(product => {
           return(
 
@@ -107,7 +108,7 @@ class Shop extends Component {
         <div className="container">
             <NavBar />
         
-            <div className="shopping">
+            <div className="looks_container">
         <h1 className="products_h1">IVY PARK</h1>
         
         <hr/>
@@ -115,7 +116,9 @@ class Shop extends Component {
         
         
         <Filter change={this.change} />
+        <p className="results">{results} results</p>
             <div className="products">
+
                 {list}
             </div>
         </div>

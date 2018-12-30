@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import NavBar from './Nav'
+import NavBar from '../Nav'
 
 
 class Likes extends Component {
@@ -11,10 +11,10 @@ class Likes extends Component {
        
 render () {
    
-       
+         var results = this.props.likes.length;
          var list = this.props.likes.map(like => {
             return(
-                <div className="list_item " key={like.id}>
+                <div className="liked_item " key={like.id}>
         <div className="liked_image">
         <img src={like.image}/>
         </div>
@@ -41,7 +41,8 @@ render () {
         <hr/>
         <h2 className="wishlist">Add to your Wishlist...</h2>
         <div >
-        <div className="list">
+        <div className="wishList_list">
+        <p className="likes_results">items: {results}</p>
         {list}
         </div>
         </div>

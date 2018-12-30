@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import products from './reducers/shop_reducer';
+
 
 
 
@@ -15,7 +15,7 @@ class Filter extends Component {
       <div className="filter">
        
 
-        <div className="product_cost">
+        <div className="product_select">
         <h4>Type:</h4>
        <select onChange={this.props.change}  name="type" >
            <option value="all">All</option>
@@ -27,7 +27,7 @@ class Filter extends Component {
        </select>
        </div>
 
-       <div className="product_cost">
+       <div className="product_select">
         <h4>Price:</h4>
        <select onChange={this.props.change}  name="price" >
            <option value="all">All</option>
@@ -38,7 +38,7 @@ class Filter extends Component {
        </select>
        </div>
       
-       <div className="product_cost">
+       <div className="product_select">
         <h4>Color:</h4>
        <select onChange={this.props.change}  name="color" >
            <option value="all">All</option>
@@ -49,7 +49,7 @@ class Filter extends Component {
            <option value="green">Green</option>
        </select>
        </div>
-       <div className = "product_cost">
+       <div className = "product_select">
        <h4>Sort</h4>
        <select onChange ={this.props.change} name = 'sortBy'>
        <option value='asc'>Low to High</option>

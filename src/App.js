@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
-import Home from './home';
-import Shop from './Shop';
-import Details from './detail';
-import products from './reducers/shop_reducer'
-import Likes from './likes'
+import Home from './main/Home';
+import Shop from './lookbook/Looks';
+import Details from './lookbook/Detail';
+import products from './reducers/shop_reducer';
+import Likes from './wishlist/Likes';
+
 import{ BrowserRouter, Route,Switch} from 'react-router-dom';
-import Footer from './footer';
+import Footer from './Footer';
+
 
 
 
@@ -73,7 +75,7 @@ class App extends Component {
       <div >
         
       <Switch>
-
+      
     <Route path="/wish" component={(props)=> <Likes {...props} likes={this.state.likes} deleteLike={this.deleteLike} />}/>
     <Route path="/shop" component={(props)=> <Shop {...props} products={this.state.products}/>}/>
       <Route path="/:id" component={(props)=> <Details {...props} products={this.state.products}addLike={this.addLike} />}/>

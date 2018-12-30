@@ -21,7 +21,7 @@ class Details extends Component {
         return (
         <div className="container product_details " key={product.product_id}>
           <div className="left">
-            <div className="images">
+            <div className="detail_images">
              <img className="detail_main-photo" src = {product.image[0]} />
              <img className="detail_second-photo" src = {product.image[1]} />
              <img className="detail_third-photo" src = {product.image[2]} />
@@ -40,7 +40,7 @@ class Details extends Component {
           <p className="detail_colors" >Avaliable colors: {product.colors}</p>
           </div>
           <p className="detail_price">${product.price}</p>
-          <button className="submit" onClick = {() => this.props.addLike(product)}>Add To Wishlist</button>
+          <button className="wishlist_button" onClick = {() => this.props.addLike(product)}>Add To Wishlist</button>
           </div>
         </div>
         )

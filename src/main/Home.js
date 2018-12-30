@@ -1,6 +1,6 @@
  import React from 'react';
- import NavBar from './Nav';
- import Looks from './looks';
+ import NavBar from '../Nav';
+ import Looks from './Grid';
  import About from './About';
 
  const Home = () => {

@@ -4,9 +4,9 @@ import {Link} from 'react-router-dom';
 const About = () => {
 
     return(
-<div className="container">
+<div className="about_container">
     <div className="about_text">
-   <span className="bold"> IVY PARK </span> AW16 IS HERE
+   <span className="bold">  IVY PARK </span> AW16 IS HERE
 Now in its second season, Ivy Park is the
 activewear label co-founded by Beyoncé. 
 Uniting technical sportswear with fashion-led
