@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import NavBar from '../Nav'
 import {Link} from 'react-router-dom';
-import Footer from '../Footer';
+
 
 
 class Likes extends Component {
@@ -50,7 +50,7 @@ render () {
         <p className="likes_results">items: {results}</p>
         {list}
         </div>
-        <Footer/>
+        
         </div>
         </div>
       
