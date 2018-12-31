@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
+import Footer from '../Footer';
 
 
 class Details extends Component {
@@ -59,6 +60,7 @@ class Details extends Component {
 
       
       {productList}
+      <Footer/>
       </div>
     )
   }

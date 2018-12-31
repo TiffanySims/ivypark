@@ -4,7 +4,7 @@ import Looks from './lookbook/Looks';
 import Details from './lookbook/Detail';
 import products from './reducers/Looks_reducer';
 import Likes from './wishlist/Likes';
-import Footer from './Footer';
+
 import{ BrowserRouter, Route,Switch} from 'react-router-dom';
 
 
@@ -81,7 +81,7 @@ class App extends Component {
       <Route path="/:id" component={(props)=> <Details {...props} products={this.state.products}addLike={this.addLike} />}/>
         <Route path="/" component={Home}/>
         </Switch>
-        <Footer/>
+        
       </div>
      
       </BrowserRouter>
