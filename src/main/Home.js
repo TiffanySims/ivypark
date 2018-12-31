@@ -2,6 +2,7 @@
  import NavBar from '../Nav';
  import Looks from './Grid';
  import About from './About';
+ import Footer from '../Footer';
  
 
  const Home = () => {
@@ -22,7 +23,7 @@
         </div>
         <Looks />
         <About />
-        
+        <Footer />
         </div>
       );
     }
