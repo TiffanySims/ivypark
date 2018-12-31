@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import Filter from '../lookbook/Filter';
 import {Link} from 'react-router-dom';
-import NavBar from '../Nav'
-import Footer from '../Footer';
+import NavBar from '../Nav';
+
 
 
 
@@ -123,7 +123,7 @@ class Looks extends Component {
                 {list}
             </div>
         </div>
-        <Footer/>
+        
         </div>
     );
   }
