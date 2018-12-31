@@ -5,7 +5,7 @@ import NavBar from '../Nav'
 
 
 
-class Shop extends Component {
+class Looks extends Component {
     state = {
         
         filtered:this.props.products,
@@ -129,4 +129,4 @@ class Shop extends Component {
 }
 
 
-export default Shop;
+export default Looks;

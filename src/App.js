@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import Home from './main/Home';
-import Shop from './lookbook/Looks';
+import Looks from './lookbook/Looks';
 import Details from './lookbook/Detail';
-import products from './reducers/shop_reducer';
+import products from './reducers/Looks_reducer';
 import Likes from './wishlist/Likes';
 
 import{ BrowserRouter, Route,Switch} from 'react-router-dom';
@@ -77,7 +77,7 @@ class App extends Component {
       <Switch>
       
     <Route path="/wish" component={(props)=> <Likes {...props} likes={this.state.likes} deleteLike={this.deleteLike} />}/>
-    <Route path="/shop" component={(props)=> <Shop {...props} products={this.state.products}/>}/>
+    <Route path="/Looks" component={(props)=> <Looks {...props} products={this.state.products}/>}/>
       <Route path="/:id" component={(props)=> <Details {...props} products={this.state.products}addLike={this.addLike} />}/>
         <Route path="/" component={Home}/>
         </Switch>
