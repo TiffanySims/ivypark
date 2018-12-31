@@ -23,7 +23,7 @@
         </div>
         <Looks />
         <About />
-        <Footer/>
+        
         </div>
       );
     }
