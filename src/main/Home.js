@@ -2,7 +2,6 @@
  import NavBar from '../Nav';
  import Looks from './Grid';
  import About from './About';
- import Footer from '../Footer';
  
 
  const Home = () => {
@@ -23,7 +22,17 @@
         </div>
         <Looks />
         <About />
-        <Footer />
+        <footer>
+    <ul className="footer_list">
+        <li className="footer_list-item">FAQ</li>
+        <li className="footer_list-item">Contact Us</li>
+        <li className="footer_list-item">Terms</li>
+        <li className="footer_list-item">Privacy</li>
+    </ul>
+    
+    <p className="copyright">&copy; 2018 IvyPark</p>
+
+</footer>
         </div>
       );
     }
