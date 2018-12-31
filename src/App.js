@@ -4,9 +4,9 @@ import Looks from './lookbook/Looks';
 import Details from './lookbook/Detail';
 import products from './reducers/Looks_reducer';
 import Likes from './wishlist/Likes';
-
-import{ BrowserRouter, Route,Switch} from 'react-router-dom';
 import Footer from './Footer';
+import{ BrowserRouter, Route,Switch} from 'react-router-dom';
+
 
 
 
