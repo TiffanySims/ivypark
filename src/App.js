@@ -77,7 +77,7 @@ class App extends Component {
       <Switch>
       
     <Route path="/wish" component={(props)=> <Likes {...props} likes={this.state.likes} deleteLike={this.deleteLike} />}/>
-    <Route path="/Looks" component={(props)=> <Looks {...props} products={this.state.products}/>}/>
+    <Route path="/looks" component={(props)=> <Looks {...props} products={this.state.products}/>}/>
       <Route path="/:id" component={(props)=> <Details {...props} products={this.state.products}addLike={this.addLike} />}/>
         <Route path="/" component={Home}/>
         </Switch>

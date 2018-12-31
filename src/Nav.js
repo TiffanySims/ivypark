@@ -15,7 +15,7 @@ const NavBar = () => {
     </Link>
     
     <ul className="nav_list">
-    <Link to="/shop">
+    <Link to="/looks">
         <li className="nav_list-item"><span className="nav_list-link">LookBook</span></li>
         </Link>
         

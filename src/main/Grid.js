@@ -38,21 +38,21 @@ class Looks extends Component {
     <img className="slider slider-1" src= 'images/bey.jpg' ></img>
     <div className="look_info">
     <p>TOPS</p>
-    <Link to ="/shop" className="look_button">View LookBook</Link>
+    <Link to ="/looks" className="look_button">View LookBook</Link>
     </div>
 </div>
 <div className="look">
     <img className="slider slider-2" src= 'images/bey1.jpg' ></img>
     <div className="look_info">
     <p>BOTTOMS</p>
-    <Link to ="/shop" className="look_button">View LookBook</Link>
+    <Link to ="/looks" className="look_button">View LookBook</Link>
     </div>
 </div>
 <div className="look">
     <img className="slider slider-3" src= 'images/b4.jpg' ></img>
     <div className="look_info">
     <p>OUTERWEAR</p>
-    <Link to ="/shop" className="look_button">View LookBook</Link>
+    <Link to ="/looks" className="look_button">View LookBook</Link>
     </div>
 </div>
 <div className="look">
