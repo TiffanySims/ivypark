@@ -468,9 +468,7 @@ cursor: pointer;
   }
 
 @media only screen and (max-width: 768px){
-  .nav{
-    display: none;
-  }
+ 
  .looks{
    display:block;
  }
@@ -493,13 +491,17 @@ cursor: pointer;
   .likes{
     width:100%;
   }
+  .nav_list-link{
+    padding-left: 10px;
+  }
+  .nav_list-item{
+    font-size: 11px;
+  }
   
 }
 
 @media only screen and (max-width: 600px){
-.nav{
-  display: none;
-}
+
 .slider{height: 250px;}
 
 .looks{
@@ -538,7 +540,7 @@ cursor: pointer;
   width: 95%;
   margin-top:20px;
 }
-.container{display: block;}
+
 .detail_size{
   display: block;
 }

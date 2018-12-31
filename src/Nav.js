@@ -2,8 +2,14 @@ import React from 'react';
 import{ Link} from 'react-router-dom';
 
 const NavBar = () => {
+
+   
+
    return (
+    
+
     <div className="nav">
+    
     <Link to ="/">
     <h3 className="nav-heading">IVY PARK</h3>
     </Link>
@@ -18,6 +24,7 @@ const NavBar = () => {
         </Link>
     </ul>
     </div>
+   
    )
 }
 export default NavBar
