@@ -201,6 +201,7 @@ select{
   margin:0 auto;
   margin-top: 50px;
   font-family: 'Open Sans', sans-serif;
+  display: flex;
 }
 
 .detail_main-photo {
@@ -551,5 +552,7 @@ cursor: pointer;
 .right{
   padding: 30px 10px;
 }
-
+.product_details{
+  display: block;
+}
 }

@@ -8,7 +8,7 @@ class Looks extends Component {
     const slide2 = document.querySelector('.slider-2');
     const slide3 = document.querySelector('.slider-3');
     const slide4 = document.querySelector('.slider-4');
-    const topArray =['images/bey.jpg','images/bey4.jpg','images/bey5.png'];
+    const topArray =['images/b.jpg','images/bey4.jpg','images/bey5.png'];
     const bottomArray =['images/bey1.jpg','images/ivybottoms.jpg','images/ivypants.jpg'];
     const outerArray =['images/b4.jpg','images/ivycoat.jpg','images/jacket_lady.jpg'];
     const accArray =['images/b3.jpg','images/beenie.jpg','images/ivyhat.jpg'];
@@ -35,7 +35,7 @@ class Looks extends Component {
 <div className = "grid_container">
 <div className="looks">
 <div className="look">
-    <img className="slider slider-1" src= 'images/bey.jpg' ></img>
+    <img className="slider slider-1" src= 'images/b.jpg' ></img>
     <div className="look_info">
     <p>TOPS</p>
     <Link to ="/looks" className="look_button">View LookBook</Link>

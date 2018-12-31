@@ -20,7 +20,7 @@ class Details extends Component {
           })
 
         return (
-        <div className="container product_details " key={product.product_id}>
+        <div className="product_details " key={product.product_id}>
           <div className="left">
             <div className="detail_images">
              <img className="detail_main-photo" src = {product.image[0]} />
