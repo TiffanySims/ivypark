@@ -94,7 +94,7 @@ class Looks extends Component {
 
               <div className="product" key={product.product_id}>
               <Link to = {{ pathname: '/'+product.product_id}}>
-                  <img className="product_image"src={product.image[0]} />
+                  <img className="product_image"src={product.image[0]}  />
                   </Link>
                   <div className="product_info">
                       <p className="product_title">{product.title}</p>
