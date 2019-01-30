@@ -19,7 +19,7 @@ const products =
             price: 70.00,
             type:'top',
             title:'Asymmetric Sweatshirt',
-            description:'We are totally loving this light grey  asymmetric tape logo hoodie by Ivy Park. Ultra-modern and one hundred percent cool, this is leisurewear with an edge. 100% Cotton. Machine washable.'
+            description:'We are totally loving this light grey asymmetric tape logo hoodie by Ivy Park. Ultra-modern and one hundred percent cool, this is leisurewear with an edge. 100% Cotton. Machine washable.'
     
         },
         {
