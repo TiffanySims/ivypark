@@ -59,7 +59,7 @@ class Looks extends Component {
     <img className="slider slider-4" src= 'images/b3.jpg' ></img>
     <div className="look_info">
     <p>ACCESSORIES</p>
-    <Link to ="/shop" className="look_button">View LookBook</Link>
+    <Link to ="/looks" className="look_button">View LookBook</Link>
     </div>
 </div>
 </div>

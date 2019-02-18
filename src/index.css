@@ -360,7 +360,7 @@ font-size: 12px;
   display: grid;
   grid-template-columns: repeat(2, 300px);
   margin: 0 auto;
-  width: 50%;
+  width: 44%;
   padding: 80px;
 }
 
