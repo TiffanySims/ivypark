@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
   box-sizing: border-box;
   overflow-x: hidden;
 }
@@ -255,14 +255,13 @@ ul {
   background: #fff;
   color: rgb(192, 18, 18);
 }
+.wishlist_button:focus {
+  outline: none;
+}
 .wishlist_button:hover {
   background: rgb(192, 18, 18);
   cursor: pointer;
   color: #fff;
-}
-
-.wishlist_button:focus {
-  outline: none;
 }
 
 .wishlist_view {
@@ -328,27 +327,6 @@ ul {
   font-size: 12px;
 }
 
-.grid_container {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.846), rgba(0, 0, 0, 0.846)),
-    url("./main/back.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
-.looks {
-  display: grid;
-  grid-template-columns: repeat(2, 300px);
-  margin: 0 auto;
-  width: 44%;
-  padding: 80px;
-}
-
-.look {
-  max-width: 600px;
-  margin: 0 auto;
-  position: relative;
-}
-
 .slider {
   width: 300px;
   height: 320px;
@@ -356,19 +334,42 @@ ul {
   opacity: 0.6;
   border-radius: 3px;
 }
-.look_info {
-  position: absolute;
 
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-  color: white;
+.grid_container {
+  background-color: #0c0c0c;
+  padding: 15px;
+  min-height: 95vh;
 }
-.look_info p {
-  font-size: 30px;
-  margin-bottom: 10px;
-  font-size: 30px;
+
+.grid_looks {
+  margin: 10px auto;
+  width: 85%;
+  padding: 80px 0;
+  display: flex;
 }
+
+.grid_look-title {
+  padding: 10px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.one .grid_look-title,
+.three .grid_look-title {
+  margin-top: -3px;
+}
+.one .grid_look-title {
+  background-color: #2b2d42;
+}
+.two .grid_look-title {
+  background-color: #8d99ae;
+}
+.three .grid_look-title {
+  background-color: #647380;
+}
+.four .grid_look-title {
+  background-color: #ef233c;
+}
+
 .look_button {
   border: 1px solid rgb(192, 18, 18);
   color: white;
@@ -380,6 +381,7 @@ ul {
   display: flex;
   max-width: 1140px;
   margin: 80px auto;
+  min-height: 50vh;
 }
 
 .about_text {
@@ -408,6 +410,7 @@ footer {
   color: #6d6464;
   font-size: 12px;
   text-align: center;
+  height: 90px;
 }
 
 .footer_list {
@@ -423,9 +426,13 @@ footer {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1280px) {
   .products {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .grid_looks {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
 }
 
