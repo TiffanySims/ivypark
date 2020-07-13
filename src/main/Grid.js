@@ -71,36 +71,46 @@ class Looks extends Component {
       <div className='grid_container'>
         <div className='grid_looks'>
           <div className='grid_look one'>
-            <div className='grid_look-image'>
-              <img className='slider slider-1' src='images/b.jpg' />
-            </div>
-            <div className='grid_look-title'>
-              <h3>Tops</h3>
-            </div>
+            <Link to='/looks'>
+              <div className='grid_look-image'>
+                <img className='slider slider-1' src='images/b.jpg' />
+              </div>
+
+              <div className='grid_look-title'>
+                <h3>Tops</h3>
+              </div>
+            </Link>
           </div>
           <div className='grid_look two'>
-            <div className='grid_look-title'>
-              <h3>Bottoms</h3>
-            </div>
-            <div className='grid_look-image'>
-              <img className='slider slider-2' src='images/ivybottoms.jpg' />
-            </div>
+            <Link to='/looks'>
+              <div className='grid_look-title'>
+                <h3>Bottoms</h3>
+              </div>
+
+              <div className='grid_look-image'>
+                <img className='slider slider-2' src='images/ivybottoms.jpg' />
+              </div>
+            </Link>
           </div>
           <div className='grid_look three'>
-            <div className='grid_look-image'>
-              <img className='slider slider-3' src='images/ivycoat.jpg' />
-            </div>
-            <div className='grid_look-title'>
-              <h3>Outerwear</h3>
-            </div>
+            <Link to='/looks'>
+              <div className='grid_look-image'>
+                <img className='slider slider-3' src='images/ivycoat.jpg' />
+              </div>
+              <div className='grid_look-title'>
+                <h3>Outerwear</h3>
+              </div>
+            </Link>
           </div>
           <div className='grid_look four'>
-            <div className='grid_look-title'>
-              <h3>Accessories</h3>
-            </div>
-            <div className='grid_look-image'>
-              <img className='slider slider-4' src='images/beenie.jpg' />
-            </div>
+            <Link to='/looks'>
+              <div className='grid_look-title'>
+                <h3>Accessories</h3>
+              </div>
+              <div className='grid_look-image'>
+                <img className='slider slider-4' src='images/beenie.jpg' />
+              </div>
+            </Link>
           </div>
         </div>
       </div>

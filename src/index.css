@@ -343,9 +343,9 @@ ul {
 
 .grid_looks {
   margin: 10px auto;
-  width: 90%;
   padding: 80px 0;
   display: flex;
+  justify-content: space-evenly;
 }
 
 .grid_look-title {
