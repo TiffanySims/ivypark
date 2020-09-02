@@ -1,41 +1,30 @@
- import React from 'react';
- import NavBar from '../Nav';
- import Looks from './Grid';
- import About from './About';
- 
+import React from "react";
+import NavBar from "../Nav";
+import NewLooks from "./NewLooks";
+import News from "./News";
+import About from "./About";
+import Footer from "./Footer";
 
- const Home = () => {
-    
-      return (
-        <div>
-        <div className="home">
+const Home = () => {
+  return (
+    <div>
+      <div className='home'>
         <NavBar />
-         <div className="hero">
-         
-         <div className="hero_container">
-         <div className="hero_text">
-         <h1>IVY PARK </h1>
-        
-         </div>
-         </div>
-         </div>
+        <div className='hero'>
+          <a href='#nav' className='mobile_nav'>
+            <div className='mobile_nav-bars' />
+            <div className='mobile_nav-bars' />
+            <div className='mobile_nav-bars' />
+          </a>
+          <h1 className='hero_heading'>IVY PARK</h1>
         </div>
-        <Looks />
-        <About />
-        <footer>
-    <ul className="footer_list">
-        <li className="footer_list-item">FAQ</li>
-        <li className="footer_list-item">Contact Us</li>
-        <li className="footer_list-item">Terms</li>
-        <li className="footer_list-item">Privacy</li>
-    </ul>
-    
-    <p className="copyright">&copy; 2018 IvyPark</p>
+      </div>
+      <About />
+      <NewLooks />
+      <News />
+      <Footer />
+    </div>
+  );
+};
 
-</footer>
-        </div>
-      );
-    }
-  
-  
-  export default Home;
+export default Home;

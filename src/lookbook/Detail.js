@@ -36,15 +36,18 @@ class Details extends Component {
                 </p>
               </div>
               <p className='detail_price'>${product.price}</p>
-              <button
-                className='wishlist_button'
-                onClick={() => this.props.addLike(product)}
-              >
-                Add To Wishlist
-              </button>
-              <Link className='wishlist_view' to='/wish'>
-                View Wishlist
-              </Link>
+              <div className='detail_button'>
+                <button
+                  className='wishlist_button'
+                  onClick={() => this.props.addLike(product)}
+                >
+                  Add To Wishlist
+                </button>
+
+                <Link className='wishlist_view' to='/wish'>
+                  View Wishlist
+                </Link>
+              </div>
             </div>
           </div>
         );
