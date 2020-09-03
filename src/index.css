@@ -336,6 +336,15 @@ select {
   border-radius: 50%;
   padding: 2px;
 }
+.detail_top,
+.detail_middle {
+  margin-bottom: 20px;
+}
+
+.detail_size,
+.detail_price {
+  margin-bottom: 5px;
+}
 
 .detail_images {
   margin: 0 auto;
@@ -352,12 +361,11 @@ select {
 
 .detail_price {
   color: var(--mainColor);
-  font-size: 30px;
+  font-size: 24px;
   margin-top: 0;
 }
 
 .detail_description {
-  margin: 40px 0;
   line-height: 1.8;
 }
 
@@ -367,7 +375,7 @@ select {
 }
 .wishlist_button {
   border: 1px solid var(--mainColor);
-  padding: 10px 20px;
+  padding: 7px 10px;
   background: #fff;
   color: var(--mainColor);
 }

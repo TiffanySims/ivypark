@@ -26,27 +26,32 @@ class Details extends Component {
             </div>
 
             <div className='right'>
-              <h2 className='detail_heading'>{product.title}</h2>
-
-              <p className='detail_description'>{product.description}</p>
-              <div className='detail_size'>
-                <ul>Avaliable sizes: {list}</ul>
+              <div className='detail_top'>
+                <h2 className='detail_heading'>{product.title}</h2>
+                <p className='detail_description'>{product.description}</p>
+              </div>
+              <div className='detail_middle'>
+                <div className='detail_size'>
+                  <ul>Avaliable sizes: {list}</ul>
+                </div>
                 <p className='detail_colors'>
                   Avaliable colors: {product.colors}
                 </p>
               </div>
-              <p className='detail_price'>${product.price}</p>
-              <div className='detail_button'>
-                <button
-                  className='wishlist_button'
-                  onClick={() => this.props.addLike(product)}
-                >
-                  Add To Wishlist
-                </button>
+              <div className='detail_bottom'>
+                <p className='detail_price'>${product.price}</p>
+                <div className='detail_button'>
+                  <button
+                    className='wishlist_button'
+                    onClick={() => this.props.addLike(product)}
+                  >
+                    Add To Wishlist
+                  </button>
 
-                <Link className='wishlist_view' to='/wish'>
-                  View Wishlist
-                </Link>
+                  <Link className='wishlist_view' to='/wish'>
+                    View Wishlist
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
