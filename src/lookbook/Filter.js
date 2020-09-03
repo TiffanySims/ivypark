@@ -40,7 +40,7 @@ class Filter extends Component {
             </select>
           </div>
           <div className='filter_select'>
-            <h4 className='filter_select-h4'>Sort</h4>
+            <h4 className='filter_select-h4'>Sort:</h4>
             <select onChange={this.props.change} name='sortBy'>
               <option value='all'>All</option>
               <option value='asc'>Low to High</option>

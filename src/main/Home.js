@@ -4,6 +4,7 @@ import NewLooks from "./NewLooks";
 import News from "./News";
 import About from "./About";
 import Footer from "./Footer";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -16,7 +17,13 @@ const Home = () => {
             <div className='mobile_nav-bars' />
             <div className='mobile_nav-bars' />
           </a>
-          <h1 className='hero_heading'>IVY PARK</h1>
+
+          <div className='hero_text'>
+            <h1 className='hero_heading'>IVY PARK</h1>
+            <Link to='/looks' className='hero_button'>
+              Browse Looks
+            </Link>
+          </div>
         </div>
       </div>
       <About />

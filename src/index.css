@@ -4,10 +4,96 @@
   --orangeColor: rgb(231, 135, 9);
   --darkColor: #444;
 }
-
-body {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
   box-sizing: border-box;
   font-family: "Lato", Arial, Helvetica, sans-serif;
   box-sizing: border-box;
@@ -109,13 +195,17 @@ hr {
   position: relative;
 }
 
-.hero_heading {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: var(--orangeColor);
+.hero_text {
   display: none;
+}
+.hero_heading {
+  font-size: 36px;
+}
+.hero_button {
+  color: #fff;
+  background-color: var(--orangeColor);
+  padding: 10px 15px;
+  border-radius: 20px;
 }
 
 .about {
@@ -420,7 +510,7 @@ footer {
 }
 .nav:target {
   display: block;
-  width: 30%;
+  width: 50%;
 }
 @media only screen and (max-width: 1200px) {
   .products {
@@ -447,7 +537,15 @@ footer {
     width: 100%;
   }
   .liked {
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .filter_select-h4 {
+    text-align: left;
+    margin: 15px 0;
+  }
+  .filter_select {
+    margin-right: 5px;
   }
   .nav_list-link {
     padding-left: 10px;
@@ -461,7 +559,7 @@ footer {
   }
   .brand-new__list--item,
   .news__list--item {
-    width: 70%;
+    width: 75%;
     margin: 30px auto;
   }
   .nav {
@@ -470,8 +568,13 @@ footer {
   .mobile_nav {
     display: block;
   }
-  .hero_heading {
-    display: block;
+  .hero_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: var(--orangeColor);
   }
   footer {
     display: block;
@@ -495,13 +598,7 @@ footer {
     width: 180px;
     height: 200px;
   }
-  .detail_heading,
-  .detail_description,
-  .detail_price,
-  .detail_size {
-    width: 75%;
-    margin: 0 auto;
-  }
+
   .wishlist_button {
     width: 50%;
 
