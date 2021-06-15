@@ -26,6 +26,7 @@ const Looks = () => {
       <NavBar />
 
       <div className='product_container '>
+        <h1 className='products_h1 hidden'>IVY PARK</h1>
         <hr />
 
         <Filter />

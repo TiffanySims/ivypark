@@ -222,7 +222,7 @@ hr {
 }
 .product_container {
   width: 78%;
-  margin: 80px auto;
+  margin: 57px auto;
 }
 .wishlist_container {
   margin: 80px auto;
@@ -277,6 +277,10 @@ hr {
   letter-spacing: 3px;
   font-size: 24px;
   padding: 10px 0;
+}
+.hidden {
+  padding: 0;
+  display: none;
 }
 
 .filter {
@@ -595,6 +599,9 @@ footer {
   }
   .nav {
     display: none;
+  }
+  .hidden {
+    display: block;
   }
   .mobile_nav {
     display: block;
