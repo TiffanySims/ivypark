@@ -10,7 +10,7 @@ const Footer = () => {
         <li className='footer_list-item'>Privacy</li>
       </ul>
 
-      <p className='copyright'>&copy; 2019 IvyPark</p>
+      <p className='copyright'>&copy; 2020 IvyPark</p>
       <div className='about_locations'>
         <h4 className='about_heading'>Where to find Ivy Park?</h4>
 

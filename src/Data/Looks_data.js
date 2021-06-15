@@ -79,7 +79,7 @@ const products = [
     image: [
       "images/oversize.jpg",
       "images/lady_oversize.jpg",
-      "images/oversize.side.jpg",
+      "images/oversize_side.jpg",
     ],
     colors: "black",
     size: ["S", "L", "XL"],

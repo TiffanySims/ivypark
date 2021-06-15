@@ -3,6 +3,7 @@
   --secondaryColor: rgb(155, 151, 151);
   --orangeColor: rgb(231, 135, 9);
   --darkColor: #444;
+  --lightColor: rgba(68, 68, 68, 0.75);
 }
 html,
 body,
@@ -186,7 +187,7 @@ hr {
 }
 
 .hero {
-  background-image: url("./main/background1.jpg");
+  background-image: url("./Components/Main/background1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -252,7 +253,7 @@ hr {
   text-align: left;
   padding-left: 30px;
   color: rgb(82, 74, 74);
-  font-size: 14px;
+  font-size: 16px;
   margin: 0;
 }
 .product_price {
@@ -261,6 +262,7 @@ hr {
 }
 .product_title {
   margin-bottom: 5px;
+  color: var(--lightColor);
 }
 
 .product_details {
@@ -328,8 +330,8 @@ select {
   padding: 0;
   display: inline-block;
   margin-right: 10px;
-  color: var(--mainColor);
-  border: 1px solid var(--mainColor);
+  color: #000;
+  border: 1px solid #000;
   width: 25px;
   height: 25px;
   text-align: center;
@@ -343,7 +345,7 @@ select {
 
 .detail_size,
 .detail_price {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .detail_images {
@@ -354,13 +356,13 @@ select {
   text-align: center;
   font-weight: 400;
   color: white;
-  padding: 5px;
-  background-color: var(--mainColor);
+  padding: 10px;
+  background-color: #000;
   margin: 0;
 }
 
 .detail_price {
-  color: var(--mainColor);
+  color: #000;
   font-size: 24px;
   margin-top: 0;
 }
@@ -374,16 +376,16 @@ select {
   justify-content: space-between;
 }
 .wishlist_button {
-  border: 1px solid var(--mainColor);
+  border: 1px solid #000;
   padding: 7px 10px;
   background: #fff;
-  color: var(--mainColor);
+  color: #000;
 }
 .wishlist_button:focus {
   outline: none;
 }
 .wishlist_button:hover {
-  background: var(--mainColor);
+  background: #000;
   cursor: pointer;
   color: #fff;
 }
@@ -395,28 +397,30 @@ select {
 }
 
 .liked_container {
-  margin: 80px 0;
+  margin: 0 20px;
 }
 .liked {
   width: 78%;
   padding-bottom: 20px;
 }
 .liked_heading {
-  color: var(--mainColor);
-  font-size: 20px;
-  padding: 20px 0;
+  color: var(--darkColor);
+  font-size: 24px;
+  text-align: center;
+  padding: 15px 0;
 }
+
+.liked_title {
+  color: var(--lightColor);
+}
+
 .liked_item {
-  display: flex;
   background: #fff;
   margin: 20px 0;
-  width: 75%;
   position: relative;
 }
 
 .liked_image {
-  height: 140px;
-  width: 100px;
   margin-right: 20px;
 }
 .liked_image img {
@@ -425,7 +429,8 @@ select {
 }
 
 .liked_list {
-  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 .liked_price {
   color: var(--darkColor);
@@ -433,15 +438,30 @@ select {
 
 .delete {
   position: absolute;
-  top: 5px;
-  right: 5px;
+  top: 3px;
+  right: 23px;
   cursor: pointer;
   font-size: 16px;
+  background: black;
+  padding: 5px 9px;
+  border-radius: 50%;
+  color: white;
 }
 
 .liked_results {
   text-align: right;
-  font-size: 12px;
+  font-size: 14px;
+}
+.liked_default {
+  padding: 40px;
+}
+.liked_default-text-1 {
+  text-align: center;
+}
+.liked_default-text-2 {
+  text-align: center;
+  color: #000;
+  font-size: 24px;
 }
 
 .brand-new {
@@ -526,6 +546,9 @@ footer {
   .products {
     grid-template-columns: repeat(2, 1fr);
   }
+  .liked_list {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -540,9 +563,7 @@ footer {
     margin: 10px;
     margin-right: 5px;
   }
-  .liked_list {
-    width: 100%;
-  }
+
   .liked_item {
     width: 100%;
   }
@@ -577,6 +598,12 @@ footer {
   }
   .mobile_nav {
     display: block;
+  }
+  .liked_list {
+    grid-template-columns: 1fr;
+  }
+  .liked_heading {
+    padding: 20px 0;
   }
   .hero_text {
     display: flex;

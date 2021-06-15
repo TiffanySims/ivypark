@@ -1,5 +1,5 @@
 import React from "react";
-import NavBar from "../Nav";
+import NavBar from "../Main/Nav";
 import NewLooks from "./NewLooks";
 import News from "./News";
 import About from "./About";
